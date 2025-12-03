@@ -31,7 +31,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(projects.libraryTest)
+//            implementation(projects.libraryTest)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -41,6 +41,8 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

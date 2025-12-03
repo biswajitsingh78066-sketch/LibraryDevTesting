@@ -11,13 +11,13 @@ plugins {
 }
 
 kotlin {
-    androidTarget {
-        @OptIn(ExperimentalKotlinGradlePluginApi::class)
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_11)
-        }
-    }
-
+//    androidTarget {
+//        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+//        compilerOptions {
+//            jvmTarget.set(JvmTarget.JVM_11)
+//        }
+//    }
+    androidTarget()
     listOf(
         iosX64(),
         iosArm64(),
@@ -84,21 +84,12 @@ dependencies {
     debugImplementation(compose.uiTooling)
 }
 
-compose.desktop {
-    application {
-        nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.biswajit.libraryTest"
-            packageVersion = "1.0.0"
-        }
-    }
-}
 publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = "com.github.biswajitsingh78066-sketch"       // YOUR PACKAGE NAME
             artifactId = "libraryTest-compose-kmp"     // LIBRARY NAME
-            version = "1.0.0"
+            version = "1.2"
         }
     }
 }
