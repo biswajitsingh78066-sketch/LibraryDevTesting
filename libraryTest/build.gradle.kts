@@ -89,7 +89,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.biswajitsingh78066-sketch"       // YOUR PACKAGE NAME
             artifactId = "libraryTest-compose-kmp"     // LIBRARY NAME
-            version = "1.5"
+            version = "1.6"
         }
     }
 }

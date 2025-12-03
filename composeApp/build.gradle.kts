@@ -41,7 +41,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-
+            implementation("com.github.biswajitsingh78066-sketch:LibraryDevTesting:1.5")
 
         }
         commonTest.dependencies {
