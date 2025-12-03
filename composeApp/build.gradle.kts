@@ -31,7 +31,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(projects.libraryTest)
+//            implementation(projects.libraryTest)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
