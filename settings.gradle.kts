@@ -31,6 +31,4 @@ dependencyResolutionManagement {
 }
 
 include(":composeApp")
-include(":camera")
-include(":libtest")
 include(":libraryTest")
